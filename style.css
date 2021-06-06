@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    align-items: center;
+    animation: 3s infinite linear color-rotate;
+    background: url("Abstract-Blue-Light-Background-HD.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    backdrop-filter: blur(0px) hue-rotate(0deg);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+@keyframes color-rotate {
+    from { backdrop-filter: hue-rotate(0deg) blur(100px); }
+    to { backdrop-filter: hue-rotate(360deg) blur(100px); }
+}
+
+main {
+    align-items: center;
+    background: url("256649-panda-trees-sitting-depth_of_field-forest.jpg");
+    background-position: -475px -185px;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    border-radius: 15px;
+    box-shadow: 0 0 0 25px #3333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px;
+    overflow: hidden;
+    opacity: 75%;
+    padding: 25px;
+    width: 325px;
+}
+
+main > h1 {
+    backdrop-filter: blur(25px);
+    background: url("Abstract-Blue-Light-Background-HD.jpg");
+    background-clip: text;
+    background-position: bottom right;
+    background-size: cover;
+    border-radius: 15px;
+    color: transparent;
+    filter: brightness(150%) contrast(150%) hue-rotate(210deg);
+    font-family: "ZCOOL KuaiLe", sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    -webkit-background-clip: text;
+    width: 100%;
+}
+
+main > h1:last-of-type {
+    margin-top: 25px;
+}
+
+#canvas-container {
+    background: transparent;
+    border-radius: 50%;
+    height: 200px;
+    margin: 25px;
+    width: 200px;
+}

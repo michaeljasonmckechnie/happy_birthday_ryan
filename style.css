@@ -13,7 +13,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    backdrop-filter: blur(0px) hue-rotate(0deg);
+    backdrop-filter: blur(25px) hue-rotate(0deg);
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -21,24 +21,24 @@ body {
 }
 
 @keyframes color-rotate {
-    from { backdrop-filter: hue-rotate(0deg) blur(100px); }
-    to { backdrop-filter: hue-rotate(360deg) blur(100px); }
+    from { backdrop-filter: hue-rotate(0deg) blur(25px); }
+    to { backdrop-filter: hue-rotate(360deg) blur(25px); }
 }
 
 main {
     align-items: center;
     background: url("256649-panda-trees-sitting-depth_of_field-forest.jpg");
-    background-position: -475px -185px;
+    background-position: -475px -100px;
     background-repeat: no-repeat;
     background-size: auto auto;
     border-radius: 15px;
-    box-shadow: 0 0 0 25px #3333;
+    box-shadow: 0 0 0 25px #3339;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 25px;
     overflow: hidden;
-    opacity: 75%;
+    opacity: 90%;
     padding: 25px;
     width: 325px;
 }
@@ -51,7 +51,7 @@ main > h1 {
     background-size: cover;
     border-radius: 15px;
     color: transparent;
-    filter: brightness(150%) contrast(150%) hue-rotate(210deg);
+    filter: brightness(150%) contrast(150%) hue-rotate(60deg);
     font-family: "ZCOOL KuaiLe", sans-serif;
     font-size: 24px;
     padding: 10px;
@@ -67,7 +67,7 @@ main > h1:last-of-type {
 #canvas-container {
     background: transparent;
     border-radius: 50%;
-    height: 200px;
+    height: 300px;
     margin: 25px;
     width: 200px;
 }
